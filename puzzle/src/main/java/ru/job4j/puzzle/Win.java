@@ -27,15 +27,11 @@ public class Win {
         boolean rsl = false;
         for (int i = 0; i < board.length; i++) {
             if(board[i][i] == 1) {
-                for (int j = 0; j < board.length; j++) {
                     if (checkHorizont(board, i) || checkVertical(board, i)) {
                         rsl = true;
-                        break;
-                    }
+                        }
                 }
-                break;
             }
-        }
-return rsl;
+        return rsl;
     }
 }
